@@ -1,0 +1,13 @@
+{
+    "name": "sfi/grid",
+    "type": "typo3-flow-package",
+    "description": "Foundation Grid",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sfi\\Grid": "Classes"
+        }
+    }
+}
