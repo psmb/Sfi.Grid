@@ -59,10 +59,7 @@
       type: 'Sfi.Grid:Column'
 'Sfi.Grid:Column':
   superTypes:
-    - 'TYPO3.Neos:Content'
-  childNodes:
-    columnContent:
-      type: 'TYPO3.Neos:ContentCollection'
+    - 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Grid - Column'
     group: structure

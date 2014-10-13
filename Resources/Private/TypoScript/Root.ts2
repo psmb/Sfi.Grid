@@ -24,13 +24,11 @@ prototype(Sfi.Grid:Grid4) < prototype(Sfi.Grid:Row){
 	templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Row.html'
 }
 
-prototype(Sfi.Grid:Column) < prototype(TYPO3.Neos:Content) {
+prototype(Sfi.Grid:Column) < prototype(TYPO3.Neos:ContentCollection) {
     templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Column.html'
+	nodePath = 'columnContent'
 
     attributes {
 		class = ${'columns ' + q(node).property('large') +' '+ q(node).property('medium') +' '+ q(node).property('small') +' '+ q(node).property('largeOffset') +' '+ q(node).property('mediumOffset') +' '+ q(node).property('smallOffset')}
-	}
-	content = TYPO3.Neos:ContentCollection {
-		nodePath = 'columnContent'
 	}
 }
