@@ -1,4 +1,4 @@
-
+#Disable default Neos grid
 'TYPO3.Neos.NodeTypes:TwoColumn':
   abstract: true
 'TYPO3.Neos.NodeTypes:ThreeColumn':
@@ -6,57 +6,12 @@
 'TYPO3.Neos.NodeTypes:FourColumn':
   abstract: true
 'Sfi.Grid:Row':
-  abstract: true
   superTypes:
     - 'TYPO3.Neos:Content'
   ui:
     label: 'Grid - Row'
     group: structure
     inlineEditable: true
-'Sfi.Grid:Grid1':
-  superTypes:
-    - 'Sfi.Grid:Row'
-  ui:
-    label: 'Grid - 1 column'
-  childNodes:
-    column0:
-      type: 'Sfi.Grid:Column'
-'Sfi.Grid:Grid2':
-  superTypes:
-    - 'Sfi.Grid:Row'
-  ui:
-    label: 'Grid - 2 columns'
-  childNodes:
-    column0:
-      type: 'Sfi.Grid:Column'
-    column1:
-      type: 'Sfi.Grid:Column'
-'Sfi.Grid:Grid3':
-  superTypes:
-    - 'Sfi.Grid:Row'
-  ui:
-    label: 'Grid - 3 columns'
-  childNodes:
-    column0:
-      type: 'Sfi.Grid:Column'
-    column1:
-      type: 'Sfi.Grid:Column'
-    column2:
-      type: 'Sfi.Grid:Column'
-'Sfi.Grid:Grid4':
-  superTypes:
-    - 'Sfi.Grid:Row'
-  ui:
-    label: 'Grid - 4 columns'
-  childNodes:
-    column0:
-      type: 'Sfi.Grid:Column'
-    column1:
-      type: 'Sfi.Grid:Column'
-    column2:
-      type: 'Sfi.Grid:Column'
-    column3:
-      type: 'Sfi.Grid:Column'
 'Sfi.Grid:Column':
   superTypes:
     - 'TYPO3.Neos:ContentCollection'
