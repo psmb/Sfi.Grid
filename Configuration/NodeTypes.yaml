@@ -12,7 +12,9 @@
     label: 'Grid - Row'
     group: structure
     inlineEditable: true
+
 'Sfi.Grid:Column':
+  abstract: false
   superTypes:
     - 'TYPO3.Neos:ContentCollection'
   ui:
