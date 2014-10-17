@@ -12,6 +12,10 @@
     label: 'Grid - Row'
     group: structure
     inlineEditable: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sfi.Grid:Column': true
 
 'Sfi.Grid:Column':
   abstract: false
