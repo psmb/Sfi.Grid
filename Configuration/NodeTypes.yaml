@@ -1,4 +1,5 @@
 #Disable default Neos grid
+
 'TYPO3.Neos.NodeTypes:TwoColumn':
   abstract: true
 'TYPO3.Neos.NodeTypes:ThreeColumn':
@@ -16,7 +17,6 @@
     nodeTypes:
       '*': false
       'Sfi.Grid:Column': true
-
 'Sfi.Grid:Column':
   abstract: false
   superTypes:
