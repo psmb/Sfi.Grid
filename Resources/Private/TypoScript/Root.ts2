@@ -1,34 +1,9 @@
 prototype(Sfi.Grid:Row) < prototype(TYPO3.Neos:Content) {
-	templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Row.html'
-	attributes {
-		class = 'row'
-	}
-	columns = TYPO3.TypoScript:Collection
-	columns {
-		collection = ${q(node).children()}
-		itemRenderer = Sfi.Grid:Column
-		itemName = 'node'
-	}
+	attributes.class = 'row'
+	columns = Sfi.Widgets:ContentCollection
 }
 
-prototype(Sfi.Grid:Grid1) < prototype(Sfi.Grid:Row){
-	templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Row.html'
-}
-prototype(Sfi.Grid:Grid2) < prototype(Sfi.Grid:Row){
-	templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Row.html'
-}
-prototype(Sfi.Grid:Grid3) < prototype(Sfi.Grid:Row){
-	templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Row.html'
-}
-prototype(Sfi.Grid:Grid4) < prototype(Sfi.Grid:Row){
-	templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Row.html'
-}
-
-prototype(Sfi.Grid:Column) < prototype(TYPO3.Neos:ContentCollection) {
-    templatePath = 'resource://Sfi.Grid/Private/Templates/NodeTypes/Column.html'
-	nodePath = 'columnContent'
-
-    attributes {
-		class = ${'columns ' + q(node).property('large') +' '+ q(node).property('medium') +' '+ q(node).property('small') +' '+ q(node).property('largeOffset') +' '+ q(node).property('mediumOffset') +' '+ q(node).property('smallOffset')}
-	}
+prototype(Sfi.Grid:Column) < prototype(TYPO3.Neos:Content) {
+    attributes.class = ${'columns ' + q(node).property('large') +' '+ q(node).property('medium') +' '+ q(node).property('small') +' '+ q(node).property('largeOffset') +' '+ q(node).property('mediumOffset') +' '+ q(node).property('smallOffset')}
+	content = Sfi.Widgets:ContentCollection
 }

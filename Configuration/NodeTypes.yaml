@@ -1,11 +1,11 @@
 #Disable default Neos grid
-
 'TYPO3.Neos.NodeTypes:TwoColumn':
   abstract: true
 'TYPO3.Neos.NodeTypes:ThreeColumn':
   abstract: true
 'TYPO3.Neos.NodeTypes:FourColumn':
   abstract: true
+
 'Sfi.Grid:Row':
   superTypes:
     - 'TYPO3.Neos:Content'
@@ -13,17 +13,19 @@
     label: 'Grid - Row'
     group: structure
     inlineEditable: true
+    icon: 'icon-minus'
   constraints:
     nodeTypes:
       '*': false
       'Sfi.Grid:Column': true
+
 'Sfi.Grid:Column':
-  abstract: false
   superTypes:
-    - 'TYPO3.Neos:ContentCollection'
+    - 'TYPO3.Neos:Content'
   ui:
     label: 'Grid - Column'
     group: structure
+    icon: 'icon-columns'
     inlineEditable: true
     inspector:
       groups:

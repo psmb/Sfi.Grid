@@ -3,4 +3,4 @@ TYPO3:
   Neos:
     typoScript:
       autoInclude:
-        Sfi.Grid: true
+        Sfi.Grid: TRUE
