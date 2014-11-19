@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Sfi\\Styleguide": "Classes"
+            "Sfi\\Grid": "Classes"
         }
     }
 }
