@@ -3,7 +3,8 @@
     "type": "typo3-flow-package",
     "description": "Foundation Grid",
     "require": {
-        "typo3/flow": "*"
+        "typo3/flow": "*",
+        "sfi/widgets": "*"
     },
     "autoload": {
         "psr-0": {
