@@ -1,9 +1,9 @@
-prototype(Sfi.Grid:Row) < prototype(TYPO3.Neos:Content) {
+prototype(Sfi.Grid:Row) < prototype(TYPO3.TypoScript:Tag) {
 	attributes.class = 'row'
-	columns = Sfi.Widgets:ContentCollection
+	content = Sfi.Widgets:ContentCollection
 }
 
-prototype(Sfi.Grid:Column) < prototype(TYPO3.Neos:Content) {
+prototype(Sfi.Grid:Column) < prototype(TYPO3.TypoScript:Tag) {
 	iterator = ${iterator}
     attributes.class = ${'columns ' + q(node).property('large') +' '+ q(node).property('medium') +' '+ q(node).property('small') +' '+ q(node).property('largeOffset') +' '+ q(node).property('mediumOffset') +' '+ q(node).property('smallOffset') + (iterator.isLast ? 'end' : '')}
 	content = Sfi.Widgets:ContentCollection
