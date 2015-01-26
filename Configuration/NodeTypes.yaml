@@ -14,6 +14,14 @@
     group: structure
     inlineEditable: true
     icon: 'icon-minus'
+  properties:
+    additionalClass:
+      type: string
+      ui:
+        label: 'Additional class'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'structure'
   constraints:
     nodeTypes:
       '*': false
@@ -243,3 +251,10 @@
                 label: small-offset-10
               small-offset-11:
                 label: small-offset-11
+    additionalClass:
+      type: string
+      ui:
+        label: 'Additional class'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'structure'
