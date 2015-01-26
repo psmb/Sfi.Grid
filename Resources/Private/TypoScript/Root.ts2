@@ -1,5 +1,5 @@
 prototype(Sfi.Grid:Row) < prototype(TYPO3.TypoScript:Tag) {
-	attributes.class = ${'row ' + q(node).property('additionalClass')
+	attributes.class = ${'columns ' + q(node).property('large')}
 	content = Sfi.Widgets:ContentCollection
 }
 
