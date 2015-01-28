@@ -1,6 +1,6 @@
 prototype(Sfi.Grid:Row) < prototype(TYPO3.TypoScript:Tag) {
 	attributes.class = ${'row ' + q(node).property('large')}
-	content = Sfi.Widgets:ContentCollection
+	content = TYPO3.Neos:ContentCollectionRenderer
 	# Add contentElementWrapping so it would be possible to edit row's properties
 	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
 }
@@ -8,7 +8,7 @@ prototype(Sfi.Grid:Row) < prototype(TYPO3.TypoScript:Tag) {
 prototype(Sfi.Grid:Column) < prototype(TYPO3.TypoScript:Tag) {
 	iterator = ${iterator}
 	attributes.class = ${'columns ' + q(node).property('large') +' '+ q(node).property('medium') +' '+ q(node).property('small') +' '+ q(node).property('largeOffset') +' '+ q(node).property('mediumOffset') +' '+ q(node).property('smallOffset') + ' ' + q(node).property('additionalClass') + (iterator.isLast ? ' end' : '')}
-	content = Sfi.Widgets:ContentCollection
+	content = TYPO3.Neos:ContentCollectionRenderer
 	# Add contentElementWrapping so it would be possible to edit column's properties
 	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
 }
