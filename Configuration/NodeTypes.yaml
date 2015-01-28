@@ -14,6 +14,11 @@
     group: structure
     inlineEditable: true
     icon: 'icon-minus'
+    inspector:
+      groups:
+        structure:
+          label: Structure
+          position: 10
   properties:
     additionalClass:
       type: string

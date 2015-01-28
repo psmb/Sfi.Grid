@@ -1,6 +1,8 @@
 prototype(Sfi.Grid:Row) < prototype(TYPO3.TypoScript:Tag) {
 	attributes.class = ${'row ' + q(node).property('large')}
 	content = Sfi.Widgets:ContentCollection
+	# Add contentElementWrapping so it would be possible to edit row's properties
+	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
 }
 
 prototype(Sfi.Grid:Column) < prototype(TYPO3.TypoScript:Tag) {
