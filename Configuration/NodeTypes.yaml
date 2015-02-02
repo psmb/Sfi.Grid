@@ -45,6 +45,9 @@
         structure:
           label: Structure
           position: 10
+  constraints:
+    nodeTypes:
+      '*': true
   properties:
     large:
       defaultValue: ''
