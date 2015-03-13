@@ -4,7 +4,7 @@
     "description": "Foundation Grid",
     "require": {
         "typo3/flow": "*",
-        "sfi/widgets": "*"
+        "sfi/shared": "*"
     },
     "autoload": {
         "psr-0": {
