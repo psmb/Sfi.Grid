@@ -1,19 +1,19 @@
 #Disable default Neos grid
+
 'TYPO3.Neos.NodeTypes:TwoColumn':
   abstract: true
 'TYPO3.Neos.NodeTypes:ThreeColumn':
   abstract: true
 'TYPO3.Neos.NodeTypes:FourColumn':
   abstract: true
-
 'Sfi.Grid:Row':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Grid - Row'
     group: structure
     inlineEditable: true
-    icon: 'icon-minus'
+    icon: icon-minus
     inspector:
       groups:
         structure:
@@ -24,21 +24,20 @@
       type: string
       ui:
         label: 'Additional class'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
-          group: 'structure'
+          group: structure
   constraints:
     nodeTypes:
       '*': false
       'Sfi.Grid:Column': true
-
 'Sfi.Grid:Column':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'TYPO3.Neos:Content': true
   ui:
     label: 'Grid - Column'
     group: structure
-    icon: 'icon-columns'
+    icon: icon-columns
     inlineEditable: true
     inspector:
       groups:
@@ -263,6 +262,6 @@
       type: string
       ui:
         label: 'Additional class'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
-          group: 'structure'
+          group: structure
