@@ -9,6 +9,7 @@
 'Sfi.Grid:Row':
   superTypes:
     'TYPO3.Neos:Content': true
+    'TYPO3.Neos:ContentCollection': true
   ui:
     label: 'Grid - Row'
     group: structure
