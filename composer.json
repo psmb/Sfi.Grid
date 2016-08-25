@@ -5,6 +5,7 @@
     "require": {
         "typo3/flow": "*"
     },
+    "license": "LGPL-3.0+",
     "autoload": {
         "psr-0": {
             "Sfi\\Grid": "Classes"
