@@ -1,6 +1,6 @@
 
-TYPO3:
+Neos:
   Neos:
     typoScript:
       autoInclude:
-        Sfi.Grid: TRUE
+        Sfi.Grid: true

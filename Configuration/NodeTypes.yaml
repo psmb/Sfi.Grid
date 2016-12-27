@@ -1,15 +1,15 @@
 #Disable default Neos grid
 
-'TYPO3.Neos.NodeTypes:TwoColumn':
+'Neos.Neos.NodeTypes:TwoColumn':
   abstract: true
-'TYPO3.Neos.NodeTypes:ThreeColumn':
+'Neos.Neos.NodeTypes:ThreeColumn':
   abstract: true
-'TYPO3.Neos.NodeTypes:FourColumn':
+'Neos.Neos.NodeTypes:FourColumn':
   abstract: true
 'Sfi.Grid:Row':
   superTypes:
-    'TYPO3.Neos:Content': true
-    'TYPO3.Neos:ContentCollection': true
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
   ui:
     label: 'Grid - Row'
     group: structure
@@ -34,8 +34,8 @@
       'Sfi.Grid:Column': true
 'Sfi.Grid:Column':
   superTypes:
-    'TYPO3.Neos:Content': true
-    'TYPO3.Neos:ContentCollection': true
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
   ui:
     label: 'Grid - Column'
     group: structure
@@ -58,7 +58,7 @@
         reloadIfChanged: true
         inspector:
           group: structure
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
@@ -95,7 +95,7 @@
         reloadIfChanged: true
         inspector:
           group: structure
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
@@ -132,7 +132,7 @@
         reloadIfChanged: true
         inspector:
           group: structure
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
@@ -169,7 +169,7 @@
         reloadIfChanged: true
         inspector:
           group: structure
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
@@ -204,7 +204,7 @@
         reloadIfChanged: true
         inspector:
           group: structure
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
@@ -239,7 +239,7 @@
         reloadIfChanged: true
         inspector:
           group: structure
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
