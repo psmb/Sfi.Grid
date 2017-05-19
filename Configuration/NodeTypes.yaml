@@ -6,6 +6,7 @@
   abstract: true
 'Neos.Neos.NodeTypes:FourColumn':
   abstract: true
+
 'Sfi.Grid:Row':
   superTypes:
     'Neos.Neos:Content': true
@@ -32,6 +33,7 @@
     nodeTypes:
       '*': false
       'Sfi.Grid:Column': true
+
 'Sfi.Grid:Column':
   superTypes:
     'Neos.Neos:Content': true
@@ -273,3 +275,8 @@
         reloadIfChanged: true
         inspector:
           group: structure
+
+'Neos.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'Sfi.Grid:Column': false
