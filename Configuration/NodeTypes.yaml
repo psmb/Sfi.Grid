@@ -6,6 +6,11 @@
 'TYPO3.Neos.NodeTypes:FourColumn':
   abstract: true
 
+'TYPO3.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'Sfi.Grid:Column': false
+
 'Sfi.Grid:Row':
   superTypes:
     - 'TYPO3.Neos:Content'
@@ -32,6 +37,9 @@
         structure:
           label: Structure
           position: 10
+  constraints:
+    nodeTypes:
+      '*': true
   properties:
     large:
       defaultValue: ''
