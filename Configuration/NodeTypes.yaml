@@ -21,7 +21,7 @@
             large: '${data.large || ""}'
             medium: '${data.medium || "medium-" + 12/data.numberOfColumns}'
             small: '${data.small || ""}'
-          withItems: '${Range.range(1, data.numberOfColumns)}'
+          withItems: '${Array.range(1, data.numberOfColumns)}'
   ui:
     creationDialog:
       elements:
