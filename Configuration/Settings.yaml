@@ -4,7 +4,3 @@ Neos:
     fusion:
       autoInclude:
         Sfi.Grid: true
-Flowpack:
-  NodeTemplates:
-    defaultEelContext:
-      Range: Sfi\Grid\Eel\RangeHelper

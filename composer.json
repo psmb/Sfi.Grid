@@ -1,6 +1,6 @@
 {
     "name": "sfi/grid",
-    "type": "neos-package",
+    "type": "typo3-flow-package",
     "description": "Foundation Grid",
     "require": {
         "neos/neos": "^3.0",
@@ -8,8 +8,8 @@
     },
     "license": "LGPL-3.0+",
     "autoload": {
-        "psr-4": {
-            "Sfi\\Grid\\": "Classes"
+        "psr-0": {
+            "Sfi\\Grid": "Classes"
         }
     },
     "extra": {
