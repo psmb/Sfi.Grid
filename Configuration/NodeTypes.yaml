@@ -1,4 +1,4 @@
-#Disable default Neos grid
+# Disable default Neos grid
 
 'Neos.Neos.NodeTypes:TwoColumn':
   abstract: true
@@ -28,20 +28,20 @@
         numberOfColumns:
           type: string
           ui:
-            label: 'Number of columns'
+            label: i18n
             editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
             editorOptions:
               values:
                 '':
-                  label: 'Choose'
+                  label: i18n
                 1:
-                  label: '1 column'
+                  label: i18n
                 2:
-                  label: '2 columns'
+                  label: i18n
                 3:
-                  label: '3 columns'
+                  label: i18n
                 4:
-                  label: '4 columns'
+                  label: i18n
           validation:
             'Neos.Neos/Validation/NotEmptyValidator': []
         large:
@@ -52,7 +52,7 @@
             editorOptions:
               values:
                 '':
-                  label: Empty
+                  label: i18n
                 large-1:
                   label: large-1
                 large-2:
@@ -85,7 +85,7 @@
             editorOptions:
               values:
                 '':
-                  label: Empty
+                  label: i18n
                 medium-1:
                   label: medium-1
                 medium-2:
@@ -118,7 +118,7 @@
             editorOptions:
               values:
                 '':
-                  label: Empty
+                  label: i18n
                 small-1:
                   label: small-1
                 small-2:
@@ -143,20 +143,21 @@
                   label: small-11
                 small-12:
                   label: small-12
-    label: 'Grid - Row'
+    label: i18n
     group: structure
+    position: start
     inlineEditable: true
     icon: icon-minus
     inspector:
       groups:
         structure:
-          label: Structure
+          label: i18n
           position: 10
   properties:
     additionalClass:
       type: string
       ui:
-        label: 'Additional class'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: structure
@@ -170,14 +171,14 @@
     'Neos.Neos:Content': true
     'Neos.Neos:ContentCollection': true
   ui:
-    label: 'Grid - Column'
+    label: i18n
     group: structure
     icon: icon-columns
     inlineEditable: true
     inspector:
       groups:
         structure:
-          label: Structure
+          label: i18n
           position: 10
   constraints:
     nodeTypes:
@@ -195,7 +196,7 @@
           editorOptions:
             values:
               '':
-                label: Empty
+                label: i18n
               large-1:
                 label: large-1
               large-2:
@@ -232,7 +233,7 @@
           editorOptions:
             values:
               '':
-                label: Empty
+                label: i18n
               medium-1:
                 label: medium-1
               medium-2:
@@ -269,7 +270,7 @@
           editorOptions:
             values:
               '':
-                label: Empty
+                label: i18n
               small-1:
                 label: small-1
               small-2:
@@ -306,7 +307,7 @@
           editorOptions:
             values:
               '':
-                label: Empty
+                label: i18n
               large-offset-1:
                 label: large-offset-1
               large-offset-2:
@@ -341,7 +342,7 @@
           editorOptions:
             values:
               '':
-                label: Empty
+                label: i18n
               medium-offset-1:
                 label: medium-offset-1
               medium-offset-2:
@@ -376,7 +377,7 @@
           editorOptions:
             values:
               '':
-                label: Empty
+                label: i18n
               small-offset-1:
                 label: small-offset-1
               small-offset-2:
@@ -402,7 +403,7 @@
     additionalClass:
       type: string
       ui:
-        label: 'Additional class'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: structure
